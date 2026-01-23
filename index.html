@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
+  
   
   <title>Clash Characters</title>
   <style>
@@ -20,6 +21,7 @@
       justify-content: center;
       gap: 30px;
       margin-top: 30px;
+      flex-wrap: wrap;
     }
 
     .characters a img {
@@ -30,11 +32,11 @@
     }
 
     .characters a img:hover {
-      transform: scale(1.05);
+      transform: scale(1.35);
     }
 
     .info {
-      margin-top: 60px;
+      margin-top: 80px;
       padding: 20px;
       max-width: 600px;
       margin-left: auto;
@@ -59,27 +61,45 @@
     <a href="#mp">
       <img src="data:image/jpeg;base64,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" alt="Mini P.E.K.K.A" />
     </a>
+    <a href="#larry">
+      <img src="https://i.pinimg.com/originals/33/ef/ea/33efeab3db1b221866f723fbf1a98c1a.png" alt="Skeletons" />
+    </a>
   </div>
 
   <div id="hog" class="info">
     <h2>Hog Rider</h2>
-    <p>Fast win-condtion troop that targets buildings only. Great for pressure and quick damage.
-Evo stats: none
-    Hero status: noe</p>
+    <p>
+      Fast win-condition troop that targets buildings only. Great for pressure and quick damage.<br>
+      Evo status: none<br>
+      Hero status: none
+    </p>
   </div>
 
   <div id="mk" class="info">
     <h2>Mega Knight</h2>
-    <p>Heavy splash troop with spawn damage and jump attacks. Strong on defense, annoying everywhere.
-    Evo Status: Yes, Evo Mega Knight pushes enemys back.
-    Hero status: none</p>
+    <p>
+      Heavy splash troop with spawn damage and jump attacks. Strong on defense and crowd control.<br>
+      Evo status: Yes. Evo Mega Knight pushes enemies back.<br>
+      Hero status: none
+    </p>
   </div>
 
   <div id="mp" class="info">
     <h2>Mini P.E.K.K.A</h2>
-    <p>High damage singl target troop. Melts tanks if it can actually reaches them.
-    Evo status: None
-    Hero Status: Yes, hero mini Pekka levels up after his bar is fully charged</p>
+    <p>
+      High damage single-target troop. Melts tanks if it actually reaches them.<br>
+      Evo status: none<br>
+      Hero status: Yes. Hero Mini P.E.K.K.A levels up after its bar is fully charged.
+    </p>
+  </div>
+
+  <div id="larry" class="info">
+    <h2>Skeletons</h2>
+    <p>
+      Low damage single-target troop. Spawns three skeletons named Larry, Terry, and Gerry.<br>
+      Evo status: Yes. When they hit an enemy, they multiply.<br>
+      Hero status: none
+    </p>
   </div>
 
 </body>
